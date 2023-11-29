@@ -1,0 +1,1 @@
+# Model Binding 2 - Modelde Belirli Alanları Doldurmak
