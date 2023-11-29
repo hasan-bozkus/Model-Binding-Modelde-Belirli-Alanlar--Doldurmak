@@ -1,0 +1,56 @@
+﻿@model Model_Binding_2___Modelde_Belirli_Alanları_Doldurmak.Models.Student
+
+@{
+    Layout = null;
+}
+
+<table>
+    <tr>
+        <td>Kimlik No: </td>
+        <td>
+            @Model.IndentificationNumber
+        </td>
+    </tr>
+    <tr>
+        <td>Öğrencinin Adı: </td>
+        <td>
+            @Model.Name
+        </td>
+    </tr>
+    <tr>
+        <td>Öğrencinin Soyadı: </td>
+        <td>
+            @Model.Surname
+        </td>
+    </tr>
+    <tr>
+        <td>Öğrencinin Baba Adı: </td>
+        <td>
+            @Model.FatherName
+        </td>
+    </tr>
+    <tr>
+        <td>Öğrencinin Anne Adı: </td>
+        <td>
+            @Model.MotherName
+        </td>
+    </tr>
+    <tr>
+        <td>Öğrencinin Sınıf Numarası: </td>
+        <td>
+            @Model.ClassRoom.ClassNumber
+        </td>
+    </tr>
+    <tr>
+        <td>Öğrencinin Öğretmeninin Adı: </td>
+        <td>
+            @Model.ClassRoom.Teacher.TeacherName
+        </td>
+    </tr>
+    <tr>
+        <td>Öğrencinin Adı: </td>
+        <td>
+            @Model.ClassRoom.Teacher.TeacherSurname
+        </td>
+    </tr>
+</table>

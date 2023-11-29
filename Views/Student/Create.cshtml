@@ -1,0 +1,65 @@
+﻿@model Model_Binding_2___Modelde_Belirli_Alanları_Doldurmak.Models.Student
+
+@{
+    Layout = null;
+}
+
+@using (Html.BeginForm("Create"))
+{
+    <table>
+        <tr>
+            <td>Kimlik No: </td>
+            <td>
+                <input id="IndentificationNumber" name="IndentificationNumber" type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td>Öğrencinin Adı: </td>
+            <td>
+                <input id="Name" name="Name" type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td>Öğrencinin Soyadı: </td>
+            <td>
+                <input id="Surname" name="Surname" type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td>Öğrencinin Baba Adı: </td>
+            <td>
+                <input id="FatherName" name="FatherName" type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td>Öğrencinin Anne Adı: </td>
+            <td>
+                <input id="MotherName" name="MotherName" type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td>Öğrencinin Sınıf Numarası: </td>
+            <td>
+                <input id="ClassRoom.ClassNumber" name="ClassRoom.ClassNumber" type="number" />
+            </td>
+        </tr>
+        <tr>
+            <td>Öğrencinin Öğretmeninin Adı: </td>
+            <td>
+                <input id="ClassRoom.Teacher.TeacherName" name="ClassRoom.Teacher.TeacherName" type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td>Öğrencinin Öğretmeninin Soyadı: </td>
+            <td>
+                <input id="ClassRoom.Teacher.TeacherSurname" name="ClassRoom.Teacher.TeacherSurname" type="text" />
+            </td>
+        </tr>
+        <tr>
+           
+            <td>
+                <input type="submit" value="Kaydet" />
+            </td>
+        </tr>
+    </table>
+}
